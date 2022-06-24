@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>หมอหมึกพยากรณ์</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"></a>
+        <ul>
+            <li><a href="#">เกี่ยวกับหมอหมึก</a></li>
+            <li><a href="#">บทความ</a></li>
+            <li><a href="#">จองคิว</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="images/star.png" id="star" />
+        <img src="images/moon.png" id="moon" />
+        <img src="images/purple_mountain.png" id="mountain" />
+    </section>
+    <div class="sec" id="sec">
+        <div id="starr"></div>
+        <h2>หมอหมึก</h2>
+        <p>ผู้มีประสบการณ์พยากรณ์กว่า 10 ปี พร้อมคำพยากรณ์ที่แม่นยำ</p>
+        <br />
+        <div class="text-center">
+            <button class="glow-on-hover" type="button">จองคิว</button>
+        </div>
+    </div>
+    <div class="main" id="main">
+        <div class="this-text">
+            <div id="starr"></div>
+            <h2>ประวัติหมอหมึก</h2>
+            <p>
+                หมอหมึกเป็นนักพยากรณ์ที่ชำนาญด้านการทำนายดวงด้วย
+                <br /> ลูกแก้วพยากรณ์ ไพ่ทาโร และการดูลายมือ
+                <br />
+                <br /> ด้วยความสามารถที่หลากหลาย
+                <br />ทำให้หมอหมึกสามารถเลือกวิธีการทำนายที่เหมาะกับแต่ละ
+                <br />บุคคลเพื่อให้ได้ผลลัพธ์แม่นยำที่สุด
+            </p>
+        </div>
+        <img src="images/meinstudentsuit.PNG" />
+    </div>
+
+    <div class="service">
+        <div class="title">
+            <h2>รีวิวจากลูกค้า</h2>
+        </div>
+
+        <div class="box">
+            <div class="card">
+                <!-- <i class="fas fa-bars"></i> -->
+                <img src="images/buissnessman.webp" />
+                <h5>แมทธิว นักธุรกิจ</h5>
+                <div class="pra">
+                    <p>
+                        หมอหมึกช่วยผมเรื่องฤกษ์ยามใน
+                        <br />การเจอจาธุรกิจได้มากเลย <br />ตอนนี้ขายดีเทน้ำเทท่าเลยครับ
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- <i class="far fa-user"></i> -->
+                <img src="images/actress.webp" />
+                <h5>แจ็ค นักแสดง</h5>
+                <div class="pra">
+                    <p>
+                        ต้องขอบคุณหมอหมึกในการช่วยให้ความ
+                        <br />สัมพันธ์ราบรื่นด้วยนะคะ
+                        <br />ทำนายอะไรไว้ก็แม่นทุกอย่างเลยค่ะ
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <!-- <i class="far fa-bell"></i> -->
+                <img src="images/student.webp" />
+                <h5>น้ำใส นักศึกษา</h5>
+                <div class="pra">
+                    <p>
+                        ที่หมอหมึกบอกมานะคะ
+                        <br />เกิดเกือบหมดเลยค่ะ
+                        <br />ถ้าไม่ได้หมอหมึกช่วยไว้ชีวิตคงแย่เลยค่ะ
+                        <br />ดีนะที่ป้องกันเรื่องร้าย ๆ ทันเวลา
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main2" id="main2">
+        <div id="starr"></div>
+        <img src="images/map.PNG" />
+        <div class="this-text2">
+            <h2>ทำนายชะตากับหมอหมึก</h2>
+            <p>
+                สามารถจองคิวได้ในเว็ปหรือ
+                <br /> อีเมล:octopus_fortune@teller.com <br />โปรศัพท์: 099 XXXX XXX <br /> และมาที่สำนักที่ <br />ชั้น 12 อาคาร JWC ถนนโปรแกรมมิ่ง แขวงเว็ป
+                <br />เขตอินเตอร์เน็ต กรุง้ทพ 99999 <br />ตามวันเวลาที่นัดไว้
+                <br />
+                <br />จำกัดที่ 10 คิวต่อหนึ่งวัน เปิดทำการ <br />10.00 - 18.30 น. พัก 12.00 - 13.00 <br />เปิดทุกวันอังคารถึงเสาร์ หยุดวันจันทร์และอาทิตย์
+            </p>
+        </div>
+    </div>
+    <script>
+        let starr = document.getElementById("starr");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let header = document.getElementById("header");
+
+        window.addEventListener("scroll", function() {
+            let value = window.scrollY;
+            starr.style.left = value * 0.25 + "px";
+            moon.style.top = value * 1.05 + "px";
+            // mountain.style.top = value * 0.5 + "px";
+            header.style.top = value * 0.5 + "px";
+        });
+    </script>
+</body>
+
+</html>
